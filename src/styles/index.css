@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+  --color-background: rgba(143, 143, 143, 0.37);
+  --color-background-hover: rgba(146, 146, 146, 0.541);
+  --color-background-light: rgba(255, 255, 255, 0.527);
+  --color-text: white;
+  --color-primary: #171717;
+  --color-secondary: #8d8d8d;
+  --color-button-gradient-start: rgb(185, 185, 185);
+  --color-button-gradient-end: #919191;
+  --color-button-hover-gradient-start: #1b1b1b;
+  --color-button-hover-gradient-end: #000000;
+  --color-shadow: rgba(0, 0, 0, 0.575);
+  --color-shadow-light: rgba(255, 255, 255, 0.288);
+  --color-link: black;
+  --color-visited: black;
+  --font-styled: Trajan;
+  --font-global: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-global);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:link,
+:visited {
+  text-decoration: none;
+  color: var(--color-visited);
+}
+
+:link:hover {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+::-webkit-scrollbar {
+  z-index: 999;
+  width: 10px;
+  height: 100%;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(168deg, rgb(72, 72, 72) 20%, var(--color-primary) 120%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-background);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-background-hover);
+}
+
+#second, #third{
+  transition: .7s;
+  opacity: 0.4;
+  transform: rotateY(90deg)
+}
+
+#first {
+  transition: .7s;
+}
