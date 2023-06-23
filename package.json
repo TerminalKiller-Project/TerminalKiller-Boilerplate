@@ -1,8 +1,12 @@
 {
-  "name": "terminalkiller-boilerplate",
+  "name": "terminalkiller-react-boilerplate",
   "homepage": "",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "files": [
+    "public",
+    "src"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -48,7 +52,6 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3",
-    "gh-pages": "^5.0.0",
-    "nodemon": "^2.0.20"
+    "gh-pages": "^5.0.0"
   }
 }
